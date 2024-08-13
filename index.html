@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
     <title>O livro perdido</title>
 </head>
 <body>
     <main>
-    <div>
+    <div class="passo ativo" id="passo-0">
         <p>Num dia qualquer encontrei um livro de poemas na biblioteca que escondia uma carta ao final dele. Resolvi ler e decidir o que fazer com a carta</p>
-        <button class="btn-proximo">guardar a carta</button>
+        <button class="btn-proximo" data-proximo="1">guardar a carta</button>
+        <button class="btn-proximo" data-proximo="2">deixar o livro</button>
+    </div>
+    <div class="passo" id="passo-1">
+      <p>Guardei a carta comigo pois nela havia escrito um caminho para achar um lugar misterioso. Fiquei pensando sobre se deveria seguir o que havia escrito ou não</p>
+      <button class="btn-proximo" data-proximo="3">seguir o que a carta diz</button>
+      <button class="btn-proximo" data-proximo="4">apenas não seguir</button>
 
     </div>
 
